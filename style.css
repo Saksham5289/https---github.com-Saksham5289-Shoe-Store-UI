@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto:wght@400;500&display=swap');
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+   /* color: white; */
+}
+
+.white{
+    color: white;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bold
+{
+    font-weight: bolder;
+    
+}
+
+.med-size{
+    font-size: 1.2rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+#header
+{
+    background-color: black;
+}
+
+#header-top
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+input::placeholder{
+    color: white;
+}
+
+#bot-header-con{
+    width: 60VW;
+    display: flex;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+
+.slider{
+    background: url('./img/bg3.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 500vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: all 2s ease-in-out;
+    }
+
+.slider-item{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.new-season{
+    position: absolute;
+    right: 10%;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+   color: white;
+}
+
+.buy-now{
+    position: absolute;
+    padding: 6px;
+    border-radius: 5px;
+    width: 242px;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    right: 10%;
+    bottom: 20%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.buy-now:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.shoe-price{
+    width: 64px;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 1.8rem;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+}
+
+.shoe-price:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider-item:nth-child(1) .shoe-price {
+    border: 2px solid red;
+}
+.slider-item:nth-child(2) .shoe-price {
+    border: 2px solid green;
+}
+.slider-item:nth-child(3) .shoe-price {
+    border: 2px solid yellow;
+}
+.slider-item:nth-child(4) .shoe-price {
+    border: 2px solid black;
+}
+.slider-item:nth-child(5) .shoe-price {
+    border: 2px solid blue;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.feature{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 22px;
+    width: 90x;
+
+ 
+}
+
+.feature-img{
+    width: 60px;
+}
+
+.feature-p{
+    color: black;
+}
+
+.product{
+    /* height: 100vw; */
+    background-color: #f5f5f5;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+.product-desc{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+
+.product-title{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-price{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+
+.product-about{
+    margin-top: 10px;
+    size: 1rem;
+    color: grey;
+}
+
+.color{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: black;
+}
+
+.color:last-child{
+    background-color: blue;
+}
+
+
+.colors{
+    display: flex;
+    gap: 15px;
+}
+
+.sizes{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+
+.size{
+   
+    border: 2px solid black;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    margin: 8vh;
+}
+
+.gallery img {
+    width: 23vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.gallery-item{
+width: 23vw;
+
+}
+
+
+.gallery-lines {
+    color: black;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.advertisment{
+    display: flex;
+
+}
+
+.advertisment img{
+    width: 33vw;
+    height: 65vh;
+}
+
+#center-ad-item {
+    background-color: black;
+    width: 33VW;
+    height: 65vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    
+}
+
+.ad-button {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.ad-button:hover{
+    border-radius: 10px;
+    
+    
+}
+
+.footer {
+    display: flex;
+   margin-top: 5vh;
+}
+
+.footer-left{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 5vh;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: grey;
+}
+
+.useful-links{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: grey;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: grey;
+}
+
+.footer-right{
+    flex: 1;
+    position: relative;
+}
+
+.subscribe{
+    position: absolute;
+   left: 10%;
+    
+}
+#subscribe-text{
+    margin-bottom: 5px;
+}
+.followus{
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+}
+
+
+.social-icons{
+    display: flex;
+    gap: 6px;
+    margin-top: 5px;
+}
+
+.social-icons img{
+width: 20px;
+}
